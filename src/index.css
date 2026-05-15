@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-maroon: #90191b;
+  --color-brand-cream: #fbefd5;
+}
+
+@layer base {
+  body {
+    @apply text-gray-800 bg-white font-sans;
+  }
+}
