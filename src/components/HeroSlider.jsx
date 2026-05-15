@@ -98,7 +98,7 @@ const HeroSlider = () => {
                     className="inline-flex items-center text-white font-bold text-lg hover:text-[#fbefd5] transition group"
                   >
                     {slide.buttonText}
-                    <span className="ml-2 bg-[#90191b] p-1 rounded-full group-hover:bg-white group-hover:text-[#90191b] transition">
+                    <span className="ml-2 bg-[#90191b] p-1 rounded-full group-hover:bg-[#fef3de] group-hover:text-[#90191b] transition">
                       <ArrowRight size={20} />
                     </span>
                   </a>

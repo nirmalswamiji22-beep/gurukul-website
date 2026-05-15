@@ -10,7 +10,7 @@ const Home = () => {
       <HeroSlider />
 
       {/* Intro Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-[#fef3de]">
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center gap-16">
 

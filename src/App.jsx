@@ -8,7 +8,7 @@ function App() {
     <Router>
       <div className="flex flex-col min-h-screen font-sans antialiased text-[#212529]">
         <Header />
-        <main className="flex-grow bg-white">
+        <main className="flex-grow bg-[#fef3de]">
           <Routes>
             <Route path="/" element={<Home />} />
           </Routes>

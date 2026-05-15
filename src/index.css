@@ -7,6 +7,6 @@
 
 @layer base {
   body {
-    @apply text-gray-800 bg-white font-sans;
+    @apply text-gray-800 bg-[#fef3de] font-sans;
   }
 }

@@ -50,7 +50,7 @@ const ValueSystem = () => {
           <Swiper
             modules={[Navigation]}
             spaceBetween={20}
-            slidesPerView={1.2}
+            slidesPerView={1}
             breakpoints={{
               640: { slidesPerView: 2, spaceBetween: 20 },
               1024: { slidesPerView: 3, spaceBetween: 30 }
@@ -102,10 +102,10 @@ const ValueSystem = () => {
           </Swiper>
           
           {/* Custom Navigation Arrows */}
-          <button className="value-prev-btn absolute top-[40%] -left-4 md:-left-6 lg:-left-12 transform -translate-y-1/2 z-20 w-12 h-12 flex items-center justify-center bg-white text-[#90191b] rounded-full shadow-xl hover:bg-[#90191b] hover:text-white transition-all disabled:opacity-50">
+          <button className="value-prev-btn absolute top-[40%] -left-4 md:-left-6 lg:-left-12 transform -translate-y-1/2 z-20 w-12 h-12 flex items-center justify-center bg-[#fef3de] text-[#90191b] rounded-full shadow-xl hover:bg-[#90191b] hover:text-white transition-all disabled:opacity-50">
             <span className="text-2xl leading-none -ml-1">❮</span>
           </button>
-          <button className="value-next-btn absolute top-[40%] -right-4 md:-right-6 lg:-right-12 transform -translate-y-1/2 z-20 w-12 h-12 flex items-center justify-center bg-white text-[#90191b] rounded-full shadow-xl hover:bg-[#90191b] hover:text-white transition-all disabled:opacity-50">
+          <button className="value-next-btn absolute top-[40%] -right-4 md:-right-6 lg:-right-12 transform -translate-y-1/2 z-20 w-12 h-12 flex items-center justify-center bg-[#fef3de] text-[#90191b] rounded-full shadow-xl hover:bg-[#90191b] hover:text-white transition-all disabled:opacity-50">
             <span className="text-2xl leading-none -mr-1">❯</span>
           </button>
         </div>
