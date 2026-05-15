@@ -32,7 +32,7 @@ const ValueSystem = () => {
   ];
 
   return (
-    <section className="py-[50px] bg-[#90191b] overflow-hidden">
+    <section className="bg-[#90191b] overflow-hidden w-full">
       <div className="container mx-auto px-4">
         
         {/* Header Title & Text */}

@@ -60,7 +60,7 @@ const HeroSlider = () => {
   ];
 
   return (
-    <div className="relative h-[80vh] min-h-[500px] w-full mt-[100px] md:mt-[120px]">
+    <div className="relative h-full w-full pt-[80px] lg:pt-[120px]">
       <Swiper
         modules={[Autoplay, EffectFade, Navigation, Pagination]}
         effect="fade"

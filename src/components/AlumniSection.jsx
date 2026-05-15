@@ -57,7 +57,7 @@ const AlumniSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-[#fef3de] relative overflow-hidden">
+    <section className="bg-[#fef3de] relative overflow-hidden w-full">
       <div className="container mx-auto px-4">
         
         <div className="max-w-3xl mb-12">

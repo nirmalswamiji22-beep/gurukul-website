@@ -6,12 +6,14 @@ import AlumniSection from '../components/AlumniSection';
 
 const Home = () => {
   return (
-    <div className="w-full">
-      <HeroSlider />
+    <div className="w-full h-screen overflow-y-auto overflow-x-hidden snap-y snap-mandatory scroll-smooth">
+      <div className="snap-start h-screen w-full relative">
+        <HeroSlider />
+      </div>
 
       {/* Intro Section */}
-      <section className="py-20 bg-[#fef3de]">
-        <div className="container mx-auto px-4">
+      <section className="h-screen w-full flex items-center justify-center bg-[#fef3de] snap-start relative">
+        <div className="container mx-auto px-4 pt-20">
           <div className="flex flex-col lg:flex-row items-center gap-16">
 
             {/* Text Column */}
@@ -49,9 +51,15 @@ const Home = () => {
         </div>
       </section>
 
-      <AlumniSection />
-      <ValueSystem />
-      <Testimonials />
+      <div className="snap-start h-screen w-full flex flex-col justify-center relative bg-[#fef3de]">
+        <AlumniSection />
+      </div>
+      <div className="snap-start h-screen w-full flex flex-col justify-center relative bg-[#90191b]">
+        <ValueSystem />
+      </div>
+      <div className="snap-start h-screen w-full flex flex-col justify-center relative bg-[#fef3de]">
+        <Testimonials />
+      </div>
     </div>
   );
 };
