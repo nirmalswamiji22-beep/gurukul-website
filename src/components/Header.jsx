@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X, ChevronDown, Search } from 'lucide-react';
-import { useLanguage } from '../context/LanguageContext';
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [scrolled, setScrolled] = useState(false);
-  const { language, toggleLanguage, t } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -39,24 +37,13 @@ const Header = () => {
           <nav className="flex items-center space-x-6 text-[13px] font-medium text-[#90191b]">
             <Link to="/" className="flex items-center hover:text-red-700 transition">
               <img src="https://gurukul.org/wp-content/themes/gurukularts/assets/gurukul_monogram.svg" alt="Monogram" className="h-5 mr-2" />
-              {t('nav.home')}
+              Home
             </Link>
-            <Link to="/parents" className="hover:text-red-700 transition">{t('nav.parents')}</Link>
-            <Link to="/alumni" className="hover:text-red-700 transition">{t('nav.alumni')}</Link>
-            <Link to="/contributions" className="hover:text-red-700 transition">{t('nav.contributions')}</Link>
-            <Link to="/our-branches" className="hover:text-red-700 transition">{t('nav.ourBranches')}</Link>
-            <Link to="/downloads" className="hover:text-red-700 transition">{t('nav.downloads')}</Link>
-            
-            {/* Language Toggle Button */}
-            <div className="ml-4 pl-4 border-l border-gray-200 flex items-center">
-              <button 
-                onClick={toggleLanguage}
-                className="flex items-center text-[#90191b] font-bold text-[13px] border border-[#90191b] rounded-full px-3 py-0.5 hover:bg-[#90191b] hover:text-white transition shadow-sm"
-                title={`Switch to ${language === 'EN' ? 'Gujarati' : 'English'}`}
-              >
-                {language === 'EN' ? 'EN / GU' : 'GU / EN'}
-              </button>
-            </div>
+            <Link to="/parents" className="hover:text-red-700 transition">Parents</Link>
+            <Link to="/alumni" className="hover:text-red-700 transition">Alumni</Link>
+            <Link to="/contributions" className="hover:text-red-700 transition">Contributions</Link>
+            <Link to="/our-branches" className="hover:text-red-700 transition">Our Branches</Link>
+            <Link to="/downloads" className="hover:text-red-700 transition">Downloads</Link>
           </nav>
         </div>
       </div>
@@ -81,34 +68,34 @@ const Header = () => {
             <nav className="flex items-center space-x-6 xl:space-x-8 text-[15px] font-medium text-white">
               <div className="relative group cursor-pointer h-20 flex items-center">
                 <span className="flex items-center hover:text-[#fbefd5] transition py-2 text-sm font-bold tracking-wide">
-                  {t('nav.whyGurukul')} <ChevronDown size={14} className="ml-1" />
+                  Why Swaminarayan Gurukul ? <ChevronDown size={14} className="ml-1" />
                 </span>
                 <div className="absolute top-full left-0 mt-0 w-56 bg-white shadow-lg rounded-b border-t-2 border-[#90191b] hidden group-hover:block z-50">
-                  <Link to="/vision-mission" className="block px-4 py-3 text-sm text-gray-700 border-b border-gray-50 hover:text-[#90191b] hover:bg-gray-50 transition">{t('nav.visionMission')}</Link>
-                  <Link to="/why-swaminarayan-gurukul" className="block px-4 py-3 text-sm text-gray-700 border-b border-gray-50 hover:text-[#90191b] hover:bg-gray-50 transition">{t('nav.gurukulValueSystem')}</Link>
-                  <Link to="/testimonials" className="block px-4 py-3 text-sm text-gray-700 border-b border-gray-50 hover:text-[#90191b] hover:bg-gray-50 transition">{t('nav.testimonials')}</Link>
-                  <Link to="/life-at-gurukul/academic-life" className="block px-4 py-3 text-sm text-gray-700 border-b border-gray-50 hover:text-[#90191b] hover:bg-gray-50 transition">{t('nav.academicLife')}</Link>
-                  <Link to="/life-at-gurukul/residential-life" className="block px-4 py-3 text-sm text-gray-700 hover:text-[#90191b] hover:bg-gray-50 transition">{t('nav.residentialLife')}</Link>
+                  <Link to="/vision-mission" className="block px-4 py-3 text-sm text-gray-700 border-b border-gray-50 hover:text-[#90191b] hover:bg-gray-50 transition">Vision & Mission</Link>
+                  <Link to="/why-swaminarayan-gurukul" className="block px-4 py-3 text-sm text-gray-700 border-b border-gray-50 hover:text-[#90191b] hover:bg-gray-50 transition">Gurukul Value System</Link>
+                  <Link to="/testimonials" className="block px-4 py-3 text-sm text-gray-700 border-b border-gray-50 hover:text-[#90191b] hover:bg-gray-50 transition">Testimonials</Link>
+                  <Link to="/life-at-gurukul/academic-life" className="block px-4 py-3 text-sm text-gray-700 border-b border-gray-50 hover:text-[#90191b] hover:bg-gray-50 transition">Academic Life</Link>
+                  <Link to="/life-at-gurukul/residential-life" className="block px-4 py-3 text-sm text-gray-700 hover:text-[#90191b] hover:bg-gray-50 transition">Residential Life</Link>
                 </div>
               </div>
 
               <div className="relative group cursor-pointer h-20 flex items-center">
                 <span className="flex items-center hover:text-[#fbefd5] transition py-2 text-sm font-bold tracking-wide">
-                  {t('nav.ourBranches')} <ChevronDown size={14} className="ml-1" />
+                  Our Branches <ChevronDown size={14} className="ml-1" />
                 </span>
                 <div className="absolute top-full left-0 mt-0 w-48 bg-white shadow-lg rounded-b border-t-2 border-[#90191b] hidden group-hover:block z-50">
-                  <Link to="/ahmedabad" className="block px-4 py-2 text-sm text-gray-700 hover:text-[#90191b] hover:bg-gray-50 transition">{t('nav.ahmedabad')}</Link>
-                  <Link to="/bangalore" className="block px-4 py-2 text-sm text-gray-700 hover:text-[#90191b] hover:bg-gray-50 transition">{t('nav.bangalore')}</Link>
-                  <Link to="/hyderabad" className="block px-4 py-2 text-sm text-gray-700 hover:text-[#90191b] hover:bg-gray-50 transition">{t('nav.hyderabad')}</Link>
+                  <Link to="/ahmedabad" className="block px-4 py-2 text-sm text-gray-700 hover:text-[#90191b] hover:bg-gray-50 transition">Ahmedabad</Link>
+                  <Link to="/bangalore" className="block px-4 py-2 text-sm text-gray-700 hover:text-[#90191b] hover:bg-gray-50 transition">Bangalore</Link>
+                  <Link to="/hyderabad" className="block px-4 py-2 text-sm text-gray-700 hover:text-[#90191b] hover:bg-gray-50 transition">Hyderabad</Link>
                 </div>
               </div>
 
-              <Link to="/admissions" className="hover:text-[#fbefd5] transition py-2 text-sm font-bold tracking-wide">{t('nav.admissions')}</Link>
-              <Link to="/events" className="hover:text-[#fbefd5] transition py-2 text-sm font-bold tracking-wide">{t('nav.events')}</Link>
-              <Link to="/blog" className="hover:text-[#fbefd5] transition py-2 text-sm font-bold tracking-wide">{t('nav.blog')}</Link>
+              <Link to="/admissions" className="hover:text-[#fbefd5] transition py-2 text-sm font-bold tracking-wide">Admissions</Link>
+              <Link to="/events" className="hover:text-[#fbefd5] transition py-2 text-sm font-bold tracking-wide">Events</Link>
+              <Link to="/blog" className="hover:text-[#fbefd5] transition py-2 text-sm font-bold tracking-wide">Blog</Link>
               
               <Link to="/admissions" className="ml-4 border-2 border-white text-white px-6 py-2 font-bold text-sm hover:bg-white hover:text-[#cc0000] transition">
-                {t('nav.applyOnline')}
+                Apply Online
               </Link>
             </nav>
           </div>
@@ -133,13 +120,13 @@ const Header = () => {
               className="flex justify-between items-center px-6 py-4 border-b border-gray-100 text-gray-800 font-bold uppercase text-sm"
               onClick={() => toggleDropdown('why')}
             >
-              {t('nav.whyGurukul')} <ChevronDown size={16} className={`transform transition ${activeDropdown === 'why' ? 'rotate-180 text-[#cc0000]' : ''}`} />
+              Why Swaminarayan Gurukul ? <ChevronDown size={16} className={`transform transition ${activeDropdown === 'why' ? 'rotate-180 text-[#cc0000]' : ''}`} />
             </button>
             {activeDropdown === 'why' && (
               <div className="bg-gray-50 px-8 py-2">
-                <Link to="/vision-mission" className="block py-2 text-sm text-gray-600">{t('nav.visionMission')}</Link>
-                <Link to="/why-swaminarayan-gurukul" className="block py-2 text-sm text-gray-600">{t('nav.gurukulValueSystem')}</Link>
-                <Link to="/testimonials" className="block py-2 text-sm text-gray-600">{t('nav.testimonials')}</Link>
+                <Link to="/vision-mission" className="block py-2 text-sm text-gray-600">Vision & Mission</Link>
+                <Link to="/why-swaminarayan-gurukul" className="block py-2 text-sm text-gray-600">Gurukul Value System</Link>
+                <Link to="/testimonials" className="block py-2 text-sm text-gray-600">Testimonials</Link>
               </div>
             )}
 
@@ -147,28 +134,28 @@ const Header = () => {
               className="flex justify-between items-center px-6 py-4 border-b border-gray-100 text-gray-800 font-bold uppercase text-sm"
               onClick={() => toggleDropdown('branches')}
             >
-              {t('nav.ourBranches')} <ChevronDown size={16} className={`transform transition ${activeDropdown === 'branches' ? 'rotate-180 text-[#cc0000]' : ''}`} />
+              Our Branches <ChevronDown size={16} className={`transform transition ${activeDropdown === 'branches' ? 'rotate-180 text-[#cc0000]' : ''}`} />
             </button>
             {activeDropdown === 'branches' && (
               <div className="bg-gray-50 px-8 py-2">
-                <Link to="/ahmedabad" className="block py-2 text-sm text-gray-600">{t('nav.ahmedabad')}</Link>
-                <Link to="/bangalore" className="block py-2 text-sm text-gray-600">{t('nav.bangalore')}</Link>
-                <Link to="/hyderabad" className="block py-2 text-sm text-gray-600">{t('nav.hyderabad')}</Link>
+                <Link to="/ahmedabad" className="block py-2 text-sm text-gray-600">Ahmedabad</Link>
+                <Link to="/bangalore" className="block py-2 text-sm text-gray-600">Bangalore</Link>
+                <Link to="/hyderabad" className="block py-2 text-sm text-gray-600">Hyderabad</Link>
               </div>
             )}
 
-            <Link to="/admissions" className="px-6 py-4 border-b border-gray-100 text-gray-800 font-bold uppercase text-sm" onClick={() => setIsMobileMenuOpen(false)}>{t('nav.admissions')}</Link>
-            <Link to="/events" className="px-6 py-4 border-b border-gray-100 text-gray-800 font-bold uppercase text-sm" onClick={() => setIsMobileMenuOpen(false)}>{t('nav.events')}</Link>
-            <Link to="/blog" className="px-6 py-4 border-b border-gray-100 text-gray-800 font-bold uppercase text-sm" onClick={() => setIsMobileMenuOpen(false)}>{t('nav.blog')}</Link>
+            <Link to="/admissions" className="px-6 py-4 border-b border-gray-100 text-gray-800 font-bold uppercase text-sm" onClick={() => setIsMobileMenuOpen(false)}>Admissions</Link>
+            <Link to="/events" className="px-6 py-4 border-b border-gray-100 text-gray-800 font-bold uppercase text-sm" onClick={() => setIsMobileMenuOpen(false)}>Events</Link>
+            <Link to="/blog" className="px-6 py-4 border-b border-gray-100 text-gray-800 font-bold uppercase text-sm" onClick={() => setIsMobileMenuOpen(false)}>Blog</Link>
             
             {/* Quick Links Mobile */}
             <div className="px-6 py-4 bg-gray-50 mt-4 border-t border-gray-200">
-              <h4 className="font-bold text-gray-800 mb-2">{t('nav.quickLinks')}</h4>
+              <h4 className="font-bold text-gray-800 mb-2">Quick Links</h4>
               <div className="grid grid-cols-2 gap-2">
-                <Link to="/parents" className="text-sm text-[#cc0000]">{t('nav.parents')}</Link>
-                <Link to="/alumni" className="text-sm text-[#cc0000]">{t('nav.alumni')}</Link>
-                <Link to="/contributions" className="text-sm text-[#cc0000]">{t('nav.contributions')}</Link>
-                <Link to="/downloads" className="text-sm text-[#cc0000]">{t('nav.downloads')}</Link>
+                <Link to="/parents" className="text-sm text-[#cc0000]">Parents</Link>
+                <Link to="/alumni" className="text-sm text-[#cc0000]">Alumni</Link>
+                <Link to="/contributions" className="text-sm text-[#cc0000]">Contributions</Link>
+                <Link to="/downloads" className="text-sm text-[#cc0000]">Downloads</Link>
               </div>
             </div>
           </div>

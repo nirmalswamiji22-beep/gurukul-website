@@ -2,33 +2,30 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import { ArrowRight } from 'lucide-react';
-import { useLanguage } from '../context/LanguageContext';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
 
 const ValueSystem = () => {
-  const { t } = useLanguage();
-
   const slides = [
     {
-      title: t('value.vidya.title'),
-      subtitle: t('value.vidya.subtitle'),
-      features: [t('value.vidya.f1'), t('value.vidya.f2'), t('value.vidya.f3'), t('value.vidya.f4'), t('value.vidya.f5')],
+      title: 'Vidya',
+      subtitle: 'Modern Education',
+      features: ['Dynamism', 'Curiosity', 'Ambition', 'Creativity', 'Leadership'],
       image: 'https://gurukul.org/wp-content/uploads/2022/10/Mask-Group-17.jpg',
       link: 'https://gurukul.org/why-swaminarayan-gurukul'
     },
     {
-      title: t('value.sadvidya.title'),
-      subtitle: t('value.sadvidya.subtitle'),
-      features: [t('value.sadvidya.f1'), t('value.sadvidya.f2'), t('value.sadvidya.f3'), t('value.sadvidya.f4'), t('value.sadvidya.f5')],
+      title: 'Sadvidya',
+      subtitle: 'Traditional Education',
+      features: ['Gratitude', 'Empathy', 'Integrity', 'Non - Violence', 'Free from Bad Habits'],
       image: 'https://gurukul.org/wp-content/uploads/2022/10/Mask-Group-18.jpg',
       link: 'https://gurukul.org/why-swaminarayan-gurukul'
     },
     {
-      title: t('value.brahmavidya.title'),
-      subtitle: t('value.brahmavidya.subtitle'),
-      features: [t('value.brahmavidya.f1'), t('value.brahmavidya.f2'), t('value.brahmavidya.f3'), t('value.brahmavidya.f4'), t('value.brahmavidya.f5'), t('value.brahmavidya.f6')],
+      title: 'Brahmavidya',
+      subtitle: 'Spiritual Education',
+      features: ['Faith', 'Devotion', 'God Realization', 'Self Realization', 'Non - Attachment', 'Affection with Saints'],
       image: 'https://gurukul.org/wp-content/uploads/2022/10/Mask-Group-19.jpg',
       link: 'https://gurukul.org/why-swaminarayan-gurukul'
     }
@@ -41,10 +38,10 @@ const ValueSystem = () => {
         {/* Header Title & Text */}
         <div className="mb-10">
           <div className="flex flex-wrap justify-between items-center mb-4">
-            <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight">{t('value.title')}</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight">Our Value System</h2>
           </div>
           <p className="text-[#eff2f6] text-lg lg:w-10/12 leading-relaxed opacity-90 font-light">
-            {t('value.desc')}
+            At Gurukul, our academics and curriculum are mainly based on the holistic blend of the framework and principles of ancient and transformational Gurukul Value System- Vidya, Sadvidya and Brahmavidya.
           </p>
         </div>
 
@@ -96,7 +93,7 @@ const ValueSystem = () => {
                       href={slide.link} 
                       className="inline-flex items-center text-white font-bold text-[15px] hover:text-[#fbefd5] transition-colors mt-auto opacity-0 group-hover:opacity-100 duration-500 delay-200"
                     >
-                      {t('value.readMore')} <ArrowRight size={18} className="ml-2 transform group-hover:translate-x-1 transition-transform" />
+                      Read More <ArrowRight size={18} className="ml-2 transform group-hover:translate-x-1 transition-transform" />
                     </a>
                   </div>
                 </div>

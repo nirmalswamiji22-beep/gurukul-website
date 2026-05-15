@@ -2,7 +2,6 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, EffectFade, Navigation, Pagination } from 'swiper/modules';
 import { ArrowRight } from 'lucide-react';
-import { useLanguage } from '../context/LanguageContext';
 
 import 'swiper/css';
 import 'swiper/css/effect-fade';
@@ -15,49 +14,47 @@ import bsa from '../data/bsa.jpg';
 import brsa from '../data/brsa.JPG';
 
 const HeroSlider = () => {
-  const { t } = useLanguage();
-
   const slides = [
     {
       id: 1,
       image: obsi2,
-      title: t('hero.slide1.title'),
-      buttonText: t('hero.slide1.btn'),
+      title: 'One of the Best Schools in India',
+      buttonText: 'Read More',
       link: '/blog/morality/cbse-class-x-results-2026-gurukul-sets-new-benchmarks-of-excellence//'
     },
     {
       id: 2,
       image: obsi1,
-      title: t('hero.slide2.title'),
-      buttonText: t('hero.slide2.btn'),
+      title: 'One of the Best Schools in India',
+      buttonText: 'Admissions Open',
       link: '/admissions/'
     },
     {
       id: 3,
       image: 'https://gurukul.org/wp-content/uploads/2019/10/What-kind-of-world-are-we-preparing-for-our-children-international-school.jpg',
-      title: t('hero.slide3.title'),
-      buttonText: t('hero.slide3.btn'),
+      title: 'What kind of World are we Preparing for our Children?',
+      buttonText: 'Read More',
       link: '/blog/21st-century-parenting/what-kind-of-world-are-we-preparing-for-our-children/'
     },
     {
       id: 4,
       image: bsa,
-      title: t('hero.slide4.title'),
-      buttonText: t('hero.slide4.btn'),
+      title: 'Best International School Award',
+      buttonText: 'Read More',
       link: '/blog/achievements-awards/best-school-award-hyderabad/'
     },
     {
       id: 5,
       image: brsa,
-      title: t('hero.slide5.title'),
-      buttonText: t('hero.slide5.btn'),
+      title: 'Best Residential School Award',
+      buttonText: 'Read More',
       link: '/blog/achievements-awards/best-residential-school-in-india/'
     },
     {
       id: 6,
       image: 'https://gurukul.org/wp-content/uploads/2023/08/cbse-schools-in-india-best.webp',
-      title: t('hero.slide6.title'),
-      buttonText: t('hero.slide6.btn'),
+      title: '1,22,799 Students Transformed Life, Be One of them',
+      buttonText: 'Read More',
       link: '/admissions/'
     }
   ];
