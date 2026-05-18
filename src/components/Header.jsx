@@ -72,10 +72,7 @@ const Header = () => {
                 </span>
                 <div className="absolute top-full left-0 mt-0 w-56 bg-[#fef3de] shadow-lg rounded-b border-t-2 border-[#90191b] hidden group-hover:block z-50">
                   <Link to="/vision-mission" className="block px-4 py-3 text-sm text-gray-700 border-b border-gray-50 hover:text-[#90191b] hover:bg-gray-50 transition">Vision & Mission</Link>
-                  <Link to="/why-swaminarayan-gurukul" className="block px-4 py-3 text-sm text-gray-700 border-b border-gray-50 hover:text-[#90191b] hover:bg-gray-50 transition">Gurukul Value System</Link>
-                  <Link to="/testimonials" className="block px-4 py-3 text-sm text-gray-700 border-b border-gray-50 hover:text-[#90191b] hover:bg-gray-50 transition">Testimonials</Link>
-                  <Link to="/life-at-gurukul/academic-life" className="block px-4 py-3 text-sm text-gray-700 border-b border-gray-50 hover:text-[#90191b] hover:bg-gray-50 transition">Academic Life</Link>
-                  <Link to="/life-at-gurukul/residential-life" className="block px-4 py-3 text-sm text-gray-700 hover:text-[#90191b] hover:bg-gray-50 transition">Residential Life</Link>
+                  <Link to="/why-swaminarayan-gurukul" className="block px-4 py-3 text-sm text-gray-700 hover:text-[#90191b] hover:bg-gray-50 transition">Gurukul Value System</Link>
                 </div>
               </div>
 
@@ -126,7 +123,6 @@ const Header = () => {
               <div className="bg-gray-50 px-8 py-2">
                 <Link to="/vision-mission" className="block py-2 text-sm text-gray-600">Vision & Mission</Link>
                 <Link to="/why-swaminarayan-gurukul" className="block py-2 text-sm text-gray-600">Gurukul Value System</Link>
-                <Link to="/testimonials" className="block py-2 text-sm text-gray-600">Testimonials</Link>
               </div>
             )}
 

@@ -1,0 +1,566 @@
+/* Vision and Mission Page Styling */
+
+.swaminarayan-gurukul-second-page {
+  background-image: url('https://gurukul.org/wp-content/uploads/2024/06/03-1.jpg');
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  box-sizing: border-box;
+  scroll-margin-top: 90px;
+  padding: 120px 0 0px 0;
+  font-family: var(--font-default, system-ui, -apple-system, sans-serif);
+  color: #333;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 175%;
+}
+
+.swaminarayan-gurukul-second-page .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  position: relative;
+  z-index: 10;
+}
+
+/* Heading styles with custom design elements */
+.swaminarayan-gurukul-second-page .heading {
+  font-size: 33px;
+  font-family: var(--font-title, serif);
+  position: relative;
+  width: max-content;
+  margin: 20px auto 15px auto;
+  font-weight: 600;
+  text-wrap: balance;
+  text-align: center;
+}
+
+.swaminarayan-gurukul-second-page .heading::before {
+  content: "";
+  position: absolute;
+  background-color: #000;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  left: -45px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+
+.swaminarayan-gurukul-second-page .heading::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 0;
+  border-bottom: 1px solid #968e8e;
+  border-radius: 0;
+  left: -30px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+
+.swaminarayan-gurukul-second-page .heading > .design {
+  position: absolute;
+  background-color: #000;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  right: -50px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+
+.swaminarayan-gurukul-second-page .heading > .design::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 0;
+  border-bottom: 1px solid #000;
+  border-radius: 0;
+  right: 15px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+
+/* Sub-heading styles */
+.swaminarayan-gurukul-second-page .sub-heading {
+  font-size: 25px;
+  font-weight: 500;
+  color: rgb(70 69 69);
+  text-align: center;
+  width: 100%;
+  margin: 0 0 15px 0;
+  line-height: 54px;
+}
+
+.swaminarayan-gurukul-second-page .sub-heading b {
+  color: #cc0000;
+}
+
+/* Blog section grid and cards */
+.swaminarayan-gurukul-second-page .blog-section {
+  display: grid;
+  place-content: center;
+  margin-bottom: 50px;
+}
+
+.swaminarayan-gurukul-second-page .blog-section .heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.swaminarayan-gurukul-second-page .blog-section .heading::before,
+.swaminarayan-gurukul-second-page .blog-section .heading::after {
+  display: none !important;
+}
+
+.swaminarayan-gurukul-second-page .blog-section > .blog-card {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  position: relative;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Even blog cards (e.g. Swamiji photo) - image on right, text on left */
+.swaminarayan-gurukul-second-page .blog-section > .blog-card:nth-child(even) > .img {
+  order: 2;
+  margin: 50px auto 50px 50px;
+}
+
+.swaminarayan-gurukul-second-page .blog-section > .blog-card:nth-child(even) > .info-section {
+  order: 1;
+  border-right: 1px solid gray;
+  text-align: left;
+  margin-right: -1px;
+  padding-left: 4px;
+}
+
+.swaminarayan-gurukul-second-page .blog-section > .blog-card:nth-child(even) > .info-section::before,
+.swaminarayan-gurukul-second-page .blog-section > .blog-card:nth-child(even) > .info-section::after {
+  right: -10px;
+}
+
+.swaminarayan-gurukul-second-page .blog-section > .blog-card:nth-child(even) > .info-section::before {
+  top: 0%;
+  display: none;
+}
+
+/* Odd blog cards (e.g. Shastriji Maharaj photo) - image on left, text on right */
+.swaminarayan-gurukul-second-page .blog-section > .blog-card:nth-child(odd) > .img {
+  order: 1;
+  margin: 50px 50px 50px auto;
+}
+
+.swaminarayan-gurukul-second-page .blog-section > .blog-card:nth-child(odd) > .info-section {
+  order: 2;
+  border-left: 1px solid gray;
+  padding-right: 10px;
+}
+
+.swaminarayan-gurukul-second-page .blog-section > .blog-card:nth-child(odd) > .info-section::before,
+.swaminarayan-gurukul-second-page .blog-section > .blog-card:nth-child(odd) > .info-section::after {
+  left: -10px;
+}
+
+/* Common blog card element styles */
+.swaminarayan-gurukul-second-page .blog-section > .blog-card > .img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid gray;
+  padding: 10px;
+  background-color: white;
+  transition: all .3s ease-in-out;
+}
+
+.swaminarayan-gurukul-second-page .blog-section > .blog-card > .info-section {
+  padding: 50px;
+  position: relative;
+  font-size: 26px;
+  font-family: var(--font-title, serif);
+}
+
+.swaminarayan-gurukul-second-page .blog-section > .blog-card > .info-section::before,
+.swaminarayan-gurukul-second-page .blog-section > .blog-card > .info-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+.swaminarayan-gurukul-second-page .blog-section > .blog-card > .info-section::after {
+  top: 60px;
+}
+
+.swaminarayan-gurukul-second-page .blog-section > .blog-card > .info-section > .heading {
+  font-size: 26px;
+  margin: 0 0 10px;
+  font-weight: 600;
+}
+
+.swaminarayan-gurukul-second-page .blog-section > .blog-card > .info-section > .description {
+  font-size: 20px;
+  margin: 0;
+  color: #696969;
+  padding-bottom: 50px;
+  line-height: 1.6;
+}
+
+/* Inspiration card styles */
+.swaminarayan-gurukul-second-page .Inspiration-card {
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.swaminarayan-gurukul-second-page .Inspiration-card > .card {
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.57);
+  border-radius: 5px;
+  font-family: var(--font-title, serif);
+  text-align: center;
+  margin: 0 10px 40px 10px;
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.swaminarayan-gurukul-second-page .Inspiration-card > .card > .card-body {
+  margin: 0 auto 20px auto;
+  max-width: 600px;
+  min-width: 100px;
+  position: relative;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #0000001c;
+  margin-bottom: 10px;
+}
+
+.swaminarayan-gurukul-second-page .Inspiration-card > .card > .card-body:nth-child(2),
+.swaminarayan-gurukul-second-page .Inspiration-card > .card > .card-body:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.swaminarayan-gurukul-second-page .Inspiration-card > .card > .card-body > .heading {
+  margin: 0 auto 5px auto;
+  color: #bf0202;
+  width: max-content;
+  position: relative;
+  font-weight: 900;
+  text-wrap: balance;
+  letter-spacing: 4px;
+  font-family: var(--font-title, serif);
+}
+
+.swaminarayan-gurukul-second-page .Inspiration-card > .card > .card-body > .heading::before {
+  content: "";
+  position: absolute;
+  background-color: #bf0202;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  left: -27px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+
+.swaminarayan-gurukul-second-page .Inspiration-card > .card > .card-body > .heading > .design {
+  position: absolute;
+  background-color: #bf0202;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  right: -23px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+
+.swaminarayan-gurukul-second-page .Inspiration-card > .card > .card-body > .title {
+  color: #c00;
+  font-size: 21px;
+  text-wrap: balance;
+  margin: 0 auto 10px auto;
+  font-weight: 600;
+}
+
+.swaminarayan-gurukul-second-page .Inspiration-card > .card > .card-body > .description {
+  font-size: 24px;
+  margin: 0 auto 10px auto;
+  line-height: 27px;
+}
+
+.swaminarayan-gurukul-second-page .Inspiration-card > .card > .card-body > .by {
+  font-size: 15px;
+  text-align: right;
+  margin: 0;
+  color: #696969;
+}
+
+/* Inspiration block - Gurukul brochure card */
+.swaminarayan-gurukul-second-page .Inspiration-card > .blog-card {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  position: relative;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.swaminarayan-gurukul-second-page .Inspiration-card > .blog-card > .img {
+  order: 1 !important;
+  margin: 30px 50px 30px auto !important;
+  margin-right: 30px !important;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 1px solid gray;
+  padding: 10px;
+  background-color: white;
+  object-fit: cover;
+}
+
+.swaminarayan-gurukul-second-page .Inspiration-card > .blog-card h3 {
+  text-wrap: balance !important;
+}
+
+.swaminarayan-gurukul-second-page .Inspiration-card > .blog-card > .info-section {
+  order: 2 !important;
+  border-left: 1px solid gray !important;
+  text-align: left !important;
+  padding: 30px auto 30px 30px !important;
+  padding-left: 30px !important;
+  border-right: 0 !important;
+  padding-right: 10px !important;
+  position: relative;
+  font-size: 26px;
+  font-family: var(--font-title, serif);
+}
+
+.swaminarayan-gurukul-second-page .Inspiration-card > .blog-card > .info-section::before,
+.swaminarayan-gurukul-second-page .Inspiration-card > .blog-card > .info-section::after {
+  content: "";
+  position: absolute;
+  left: -8px !important;
+  top: 40px;
+  width: 15px;
+  height: 15px;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+.swaminarayan-gurukul-second-page .Inspiration-card > .blog-card > .info-section::after {
+  top: 26%;
+}
+
+.swaminarayan-gurukul-second-page .Inspiration-card > .blog-card > .info-section > .heading {
+  font-size: 26px;
+  margin: 0 0 10px;
+  font-weight: 600;
+  text-wrap: balance;
+}
+
+/* Shastri Ji Maharaj Bottom Illustration */
+.swaminarayan-gurukul-second-page .shastri_ji_maharaj {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  padding-bottom: 20px;
+  position: relative;
+  z-index: 5;
+}
+
+.swaminarayan-gurukul-second-page .shastri_ji_maharaj img {
+  width: 630px;
+  height: 530px;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1400px) {
+  .swaminarayan-gurukul-second-page .shastri_ji_maharaj img {
+    width: 470px;
+    height: 420px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .swaminarayan-gurukul-second-page {
+    padding-top: 100px;
+  }
+  .swaminarayan-gurukul-second-page .heading {
+    font-size: 29px;
+  }
+  .swaminarayan-gurukul-second-page .sub-heading {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  .swaminarayan-gurukul-second-page .sub-heading b {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .swaminarayan-gurukul-second-page {
+    padding-top: 90px;
+  }
+  
+  .swaminarayan-gurukul-second-page .heading::before {
+    width: 12px;
+    height: 12px;
+    left: -40px;
+  }
+  
+  .swaminarayan-gurukul-second-page .heading > .design {
+    width: 12px;
+    height: 12px;
+    right: -60px;
+  }
+  
+  .swaminarayan-gurukul-second-page .heading > .design::before {
+    right: 12px;
+  }
+  
+  .swaminarayan-gurukul-second-page .shastri_ji_maharaj img {
+    width: 360px;
+    height: 330px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .swaminarayan-gurukul-second-page .shastri_ji_maharaj img {
+    width: 330px;
+    height: 310px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .swaminarayan-gurukul-second-page .blog-section > .blog-card > .img {
+    width: 100px;
+    height: 100px;
+  }
+  .swaminarayan-gurukul-second-page .shastri_ji_maharaj img {
+    width: 275px;
+    height: 260px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .swaminarayan-gurukul-second-page {
+    padding-top: 80px;
+  }
+  
+  .swaminarayan-gurukul-second-page .sub-heading {
+    font-size: 21px;
+    line-height: 1.5;
+  }
+  
+  .swaminarayan-gurukul-second-page .heading {
+    font-size: 23px;
+  }
+  
+  .swaminarayan-gurukul-second-page .heading > .design {
+    right: -45px;
+  }
+  
+  .swaminarayan-gurukul-second-page .heading > .design::before {
+    width: 23px;
+  }
+  
+  .swaminarayan-gurukul-second-page .blog-section > .blog-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .swaminarayan-gurukul-second-page .blog-section > .blog-card:last-child {
+    border-bottom: 0;
+  }
+
+  .swaminarayan-gurukul-second-page .blog-section > .blog-card:nth-child(even) > .img,
+  .swaminarayan-gurukul-second-page .blog-section > .blog-card:nth-child(odd) > .img {
+    order: 1 !important;
+    margin: 15px auto !important;
+  }
+  
+  .swaminarayan-gurukul-second-page .blog-section > .blog-card:nth-child(even) > .info-section,
+  .swaminarayan-gurukul-second-page .blog-section > .blog-card:nth-child(odd) > .info-section {
+    order: 2 !important;
+    border: none !important;
+    text-align: center !important;
+    padding: 10px 15px !important;
+  }
+  
+  .swaminarayan-gurukul-second-page .blog-section > .blog-card > .img {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .swaminarayan-gurukul-second-page .blog-section > .blog-card > .info-section {
+    padding: 0 30px;
+  }
+  
+  .swaminarayan-gurukul-second-page .blog-section > .blog-card > .info-section > .heading {
+    font-size: 22px;
+  }
+  
+  .swaminarayan-gurukul-second-page .blog-section > .blog-card > .info-section > .description {
+    font-size: 17px;
+    padding-bottom: 10px;
+  }
+  
+  .swaminarayan-gurukul-second-page .blog-section > .blog-card > .info-section::before,
+  .swaminarayan-gurukul-second-page .blog-section > .blog-card > .info-section::after {
+    display: none !important;
+  }
+
+  /* Brochure mobile adjustment */
+  .swaminarayan-gurukul-second-page .Inspiration-card > .blog-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .swaminarayan-gurukul-second-page .Inspiration-card > .blog-card > .img {
+    margin: 15px auto !important;
+  }
+  
+  .swaminarayan-gurukul-second-page .Inspiration-card > .blog-card > .info-section {
+    border: none !important;
+    padding: 10px 15px !important;
+    text-align: center !important;
+  }
+  
+  .swaminarayan-gurukul-second-page .Inspiration-card > .blog-card > .info-section::before,
+  .swaminarayan-gurukul-second-page .Inspiration-card > .blog-card > .info-section::after {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .swaminarayan-gurukul-second-page .blog-section > .blog-card > .info-section {
+    padding: 0 20px;
+  }
+  
+  .swaminarayan-gurukul-second-page .blog-section > .blog-card > .info-section > .heading {
+    font-size: 20px;
+  }
+  
+  .swaminarayan-gurukul-second-page .blog-section > .blog-card > .info-section > .description {
+    font-size: 17px;
+  }
+}
