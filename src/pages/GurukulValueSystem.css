@@ -1,0 +1,165 @@
+/* Gurukul Value System Page Custom Styling */
+
+:root {
+  --color-brand-maroon: #90191b;
+  --color-brand-cream: #fbefd5;
+  --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+/* Base Page Wrapper */
+.academics-inner {
+  background-color: #fef3de;
+  scroll-margin-top: 100px;
+}
+
+/* Page Section Offsets for Fixed Header */
+.about-section,
+.value-system-body,
+.adv-section,
+.footer-notes {
+  scroll-margin-top: 110px;
+}
+
+/* Hero Title Centered & Animated */
+.page-title {
+  color: #cc0000;
+  position: relative;
+  text-align: center;
+  font-family: var(--font-serif);
+  font-size: 2.75rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  letter-spacing: -0.02em;
+}
+
+/* Value System Header & Sanskrit Stylings */
+.sanskrit-title {
+  font-family: var(--font-serif);
+  color: #90191b;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.sanskrit-translation {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #6b7280;
+  letter-spacing: 0.02em;
+}
+
+/* Grid Value Cards */
+.value-card {
+  background: #ffffff;
+  border-radius: 1rem;
+  padding: 2rem;
+  border-top: 5px solid #cc0000;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.value-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 35px rgba(144, 25, 27, 0.1);
+  border-top-color: #90191b;
+}
+
+.value-card h3 {
+  font-family: var(--font-serif);
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #cc0000;
+  margin-bottom: 0.5rem;
+}
+
+.value-card h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #4b5563;
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid #f3f4f6;
+  padding-bottom: 0.75rem;
+}
+
+/* Bullet Items Styling */
+.value-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  line-height: 1.6;
+}
+
+.value-list li::before {
+  content: "•";
+  color: #cc0000;
+  font-weight: bold;
+  font-size: 1.2rem;
+  position: absolute;
+  left: 0;
+  top: -2px;
+}
+
+/* Value Item Mini-Cards inside Subsection grids */
+.grid-item {
+  background-color: #ffffff;
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+  border-left: 4px solid transparent;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.grid-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06);
+  border-left-color: #cc0000;
+}
+
+/* Side Images in Subsection layout */
+.side-img-container img {
+  border-radius: 1rem;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease;
+}
+
+.side-img-container:hover img {
+  transform: scale(1.02);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
+}
+
+/* Admissions Footer Banner */
+.footer-notes {
+  background: linear-gradient(135deg, #cc0000 0%, #90191b 100%);
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(144, 25, 27, 0.2);
+}
+
+.footer-notes .btn {
+  background-color: #ffffff;
+  color: #cc0000;
+  font-weight: 700;
+  padding: 0.875rem 2.25rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.footer-notes .btn:hover {
+  background-color: #fbefd5;
+  color: #90191b;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsiveness tweaks */
+@media screen and (max-width: 768px) {
+  .page-title {
+    font-size: 2.25rem;
+  }
+  .sanskrit-title {
+    font-size: 1.5rem;
+  }
+}
