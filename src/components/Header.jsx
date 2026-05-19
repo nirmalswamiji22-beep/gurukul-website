@@ -87,7 +87,15 @@ const Header = () => {
                 </div>
               </div>
 
-              <Link to="/admissions" className="hover:text-[#fbefd5] transition py-2 text-sm font-bold tracking-wide">Admissions</Link>
+              <div className="relative group cursor-pointer h-20 flex items-center">
+                <span className="flex items-center hover:text-[#fbefd5] transition py-2 text-sm font-bold tracking-wide">
+                  About Us <ChevronDown size={14} className="ml-1" />
+                </span>
+                <div className="absolute top-full left-0 mt-0 w-48 bg-[#fef3de] shadow-lg rounded-b border-t-2 border-[#90191b] hidden group-hover:block z-50">
+                  <Link to="/principal" className="block px-4 py-3 text-sm text-gray-700 hover:text-[#90191b] hover:bg-gray-50 transition">Principal</Link>
+                </div>
+              </div>
+
               <Link to="/events" className="hover:text-[#fbefd5] transition py-2 text-sm font-bold tracking-wide">Events</Link>
               <Link to="/blog" className="hover:text-[#fbefd5] transition py-2 text-sm font-bold tracking-wide">Blog</Link>
               
@@ -140,7 +148,18 @@ const Header = () => {
               </div>
             )}
 
-            <Link to="/admissions" className="px-6 py-4 border-b border-gray-100 text-gray-800 font-bold uppercase text-sm" onClick={() => setIsMobileMenuOpen(false)}>Admissions</Link>
+            <button 
+              className="flex justify-between items-center px-6 py-4 border-b border-gray-100 text-gray-800 font-bold uppercase text-sm"
+              onClick={() => toggleDropdown('about')}
+            >
+              About Us <ChevronDown size={16} className={`transform transition ${activeDropdown === 'about' ? 'rotate-180 text-[#cc0000]' : ''}`} />
+            </button>
+            {activeDropdown === 'about' && (
+              <div className="bg-gray-50 px-8 py-2">
+                <Link to="/principal" className="block py-2 text-sm text-gray-600" onClick={() => setIsMobileMenuOpen(false)}>Principal</Link>
+              </div>
+            )}
+
             <Link to="/events" className="px-6 py-4 border-b border-gray-100 text-gray-800 font-bold uppercase text-sm" onClick={() => setIsMobileMenuOpen(false)}>Events</Link>
             <Link to="/blog" className="px-6 py-4 border-b border-gray-100 text-gray-800 font-bold uppercase text-sm" onClick={() => setIsMobileMenuOpen(false)}>Blog</Link>
             

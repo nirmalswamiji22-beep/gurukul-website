@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import VisionMission from './pages/VisionMission';
 import GurukulValueSystem from './pages/GurukulValueSystem';
+import Principal from './pages/Principal';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/vision-mission" element={<VisionMission />} />
             <Route path="/why-swaminarayan-gurukul" element={<GurukulValueSystem />} />
+            <Route path="/principal" element={<Principal />} />
           </Routes>
         </main>
         <Footer />

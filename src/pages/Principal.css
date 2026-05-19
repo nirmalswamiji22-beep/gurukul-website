@@ -1,0 +1,147 @@
+/* Principal Page Custom Styling */
+
+:root {
+  --color-brand-maroon: #90191b;
+  --color-brand-cream: #fbefd5;
+  --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+/* Page Wrapper */
+.principal-page-wrapper {
+  background-color: #fef3de;
+  scroll-margin-top: 100px;
+}
+
+/* Kingster Page Title / Hero Banner */
+.kingster-page-title-wrap {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border-bottom: 4px solid var(--color-brand-maroon);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.kingster-page-title-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(144, 25, 27, 0.95) 0%, rgba(204, 0, 0, 0.8) 50%, rgba(254, 243, 222, 0.1) 100%);
+}
+
+.kingster-page-title {
+  font-family: var(--font-serif);
+  letter-spacing: -0.01em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* Double-bordered photo frame */
+.principal-img-frame {
+  position: relative;
+  padding: 1rem;
+  background-color: #ffffff;
+  border: 1px solid rgba(144, 25, 27, 0.1);
+  border-radius: 1.25rem;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+  transition: all 0.4s ease;
+}
+
+.principal-img-frame::after {
+  content: "";
+  position: absolute;
+  inset: 0.5rem;
+  border: 2px dashed rgba(144, 25, 27, 0.2);
+  border-radius: 0.75rem;
+  pointer-events: none;
+  transition: all 0.4s ease;
+}
+
+.principal-img-frame:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 45px rgba(144, 25, 27, 0.15);
+}
+
+.principal-img-frame:hover::after {
+  border-color: #cc0000;
+  inset: 0.25rem;
+}
+
+.principal-img-frame img {
+  border-radius: 0.75rem;
+  transition: all 0.5s ease;
+}
+
+.principal-img-frame:hover img {
+  transform: scale(1.01);
+}
+
+/* Profile Badge under Frame */
+.profile-meta-badge {
+  background: linear-gradient(135deg, var(--color-brand-maroon) 0%, #cc0000 100%);
+  color: #ffffff;
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  box-shadow: 0 8px 20px rgba(144, 25, 27, 0.15);
+}
+
+/* Golden Quote box */
+.quote-callout {
+  position: relative;
+  background-color: var(--color-brand-cream);
+  border-left: 5px solid #cc0000;
+  border-radius: 0 1rem 1rem 0;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 8px 25px rgba(144, 25, 27, 0.03);
+}
+
+.quote-callout::before {
+  content: "“";
+  font-family: var(--font-serif);
+  font-size: 5rem;
+  color: rgba(144, 25, 27, 0.15);
+  position: absolute;
+  top: -1.5rem;
+  left: 0.75rem;
+  pointer-events: none;
+}
+
+.quote-text {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-style: italic;
+  font-weight: 700;
+  color: #90191b;
+  line-height: 1.6;
+  position: relative;
+  z-index: 2;
+}
+
+/* Letter Signoff styling */
+.letter-signoff {
+  border-top: 1px solid rgba(144, 25, 27, 0.1);
+  padding-top: 2rem;
+  margin-top: 3rem;
+}
+
+.signature-name {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #90191b;
+}
+
+.signature-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Responsiveness adjustments */
+@media screen and (max-width: 1024px) {
+  .quote-callout {
+    padding: 1.5rem;
+  }
+  .quote-text {
+    font-size: 1.15rem;
+  }
+}
