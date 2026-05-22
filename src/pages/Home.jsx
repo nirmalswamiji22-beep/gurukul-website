@@ -7,13 +7,13 @@ const AlumniSection = lazy(() => import('../components/AlumniSection'));
 
 const Home = () => {
   return (
-    <div className="w-full h-screen overflow-y-auto overflow-x-hidden snap-y snap-mandatory scroll-smooth">
-      <div className="snap-start h-screen w-full relative">
+    <div className="w-full flex flex-col">
+      <div className="h-screen w-full relative">
         <HeroSlider />
       </div>
 
       {/* Intro Section */}
-      <section className="min-h-[100vh] py-20 lg:py-0 lg:h-screen w-full flex items-center justify-center bg-[#fffbf0] snap-start relative">
+      <section className="min-h-[100vh] py-20 lg:py-0 lg:h-screen w-full flex items-center justify-center bg-[#fffbf0] relative">
         <div className="container mx-auto px-4 pt-20">
           <div className="flex flex-col lg:flex-row items-center gap-16">
 
@@ -53,13 +53,13 @@ const Home = () => {
       </section>
 
       <Suspense fallback={<div className="h-screen w-full flex items-center justify-center text-gray-500">Loading...</div>}>
-        <div className="snap-start min-h-[100vh] py-16 lg:py-0 lg:h-screen w-full flex flex-col justify-center relative bg-[#fffbf0]">
+        <div className="min-h-[100vh] py-16 lg:py-0 lg:h-screen w-full flex flex-col justify-center relative bg-[#fffbf0]">
           <AlumniSection />
         </div>
-        <div className="snap-start min-h-[100vh] py-16 lg:py-0 lg:h-screen w-full flex flex-col justify-center relative bg-[#90191b]">
+        <div className="min-h-[100vh] py-16 lg:py-0 lg:h-screen w-full flex flex-col justify-center relative bg-[#90191b]">
           <ValueSystem />
         </div>
-        <div className="snap-start min-h-[100vh] py-16 lg:py-0 lg:h-screen w-full flex flex-col justify-center relative bg-[#fffbf0]">
+        <div className="min-h-[100vh] py-16 lg:py-0 lg:h-screen w-full flex flex-col justify-center relative bg-[#fffbf0]">
           <Testimonials />
         </div>
       </Suspense>
