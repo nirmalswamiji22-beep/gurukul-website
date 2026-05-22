@@ -2,13 +2,13 @@
 
 :root {
   --color-brand-maroon: #90191b;
-  --color-brand-cream: #fbefd5;
+  --color-brand-cream: #fffbf0;
   --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
 /* Base Page Wrapper */
 .academics-inner {
-  background-color: #fef3de;
+  background-color: #fffbf0;
   scroll-margin-top: 100px;
 }
 
@@ -148,7 +148,7 @@
 }
 
 .footer-notes .btn:hover {
-  background-color: #fbefd5;
+  background-color: #fffbf0;
   color: #90191b;
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);

@@ -2,11 +2,11 @@
 
 @theme {
   --color-brand-maroon: #90191b;
-  --color-brand-cream: #fbefd5;
+  --color-brand-cream: #fffbf0;
 }
 
 @layer base {
   body {
-    @apply text-gray-800 bg-[#fef3de] font-sans;
+    @apply text-gray-800 bg-[#fffbf0] font-sans;
   }
 }

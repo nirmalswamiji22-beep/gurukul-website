@@ -60,7 +60,7 @@ const HeroSlider = () => {
   ];
 
   return (
-    <div className="relative h-full w-full pt-[80px] lg:pt-[120px]">
+    <div className="relative h-full w-full pt-[64px] lg:pt-[80px]">
       <Swiper
         modules={[Autoplay, EffectFade, Navigation, Pagination]}
         effect="fade"
@@ -87,18 +87,18 @@ const HeroSlider = () => {
             {/* Overlay for better text readability */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent z-10 pointer-events-none"></div>
             
-            <div className="relative z-10 h-full flex items-end pb-16 md:pb-24">
+            <div className="relative z-10 h-full flex items-end pb-8 md:pb-24">
               <div className="container mx-auto px-4">
                 <div className="max-w-4xl">
-                  <h2 className="text-white text-3xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight drop-shadow-md">
+                  <h2 className="text-white text-2xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight drop-shadow-md">
                     {slide.title}
                   </h2>
                   <a 
                     href={slide.link} 
-                    className="inline-flex items-center text-white font-bold text-lg hover:text-[#fbefd5] transition group"
+                    className="inline-flex items-center text-white font-bold text-lg hover:text-[#fffbf0] transition group"
                   >
                     {slide.buttonText}
-                    <span className="ml-2 bg-[#90191b] p-1 rounded-full group-hover:bg-[#fef3de] group-hover:text-[#90191b] transition">
+                    <span className="ml-2 bg-[#90191b] p-1 rounded-full group-hover:bg-[#fffbf0] group-hover:text-[#90191b] transition">
                       <ArrowRight size={20} />
                     </span>
                   </a>

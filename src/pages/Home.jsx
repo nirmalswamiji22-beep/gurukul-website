@@ -12,13 +12,13 @@ const Home = () => {
       </div>
 
       {/* Intro Section */}
-      <section className="h-screen w-full flex items-center justify-center bg-[#fef3de] snap-start relative">
+      <section className="min-h-[100vh] py-20 lg:py-0 lg:h-screen w-full flex items-center justify-center bg-[#fffbf0] snap-start relative">
         <div className="container mx-auto px-4 pt-20">
           <div className="flex flex-col lg:flex-row items-center gap-16">
 
             {/* Text Column */}
             <div className="lg:w-1/2">
-              <h2 className="text-4xl md:text-5xl font-bold text-[#1f1f1f] mb-6 leading-tight">
+              <h2 className="text-3xl md:text-5xl lg:text-4xl font-bold text-[#1f1f1f] mb-6 leading-tight">
                 Shree Swaminarayan Gurukul International School
               </h2>
               <div className="w-24 h-1 bg-[#cc0000] mb-8"></div>
@@ -51,13 +51,13 @@ const Home = () => {
         </div>
       </section>
 
-      <div className="snap-start h-screen w-full flex flex-col justify-center relative bg-[#fef3de]">
+      <div className="snap-start min-h-[100vh] py-16 lg:py-0 lg:h-screen w-full flex flex-col justify-center relative bg-[#fffbf0]">
         <AlumniSection />
       </div>
-      <div className="snap-start h-screen w-full flex flex-col justify-center relative bg-[#90191b]">
+      <div className="snap-start min-h-[100vh] py-16 lg:py-0 lg:h-screen w-full flex flex-col justify-center relative bg-[#90191b]">
         <ValueSystem />
       </div>
-      <div className="snap-start h-screen w-full flex flex-col justify-center relative bg-[#fef3de]">
+      <div className="snap-start min-h-[100vh] py-16 lg:py-0 lg:h-screen w-full flex flex-col justify-center relative bg-[#fffbf0]">
         <Testimonials />
       </div>
     </div>

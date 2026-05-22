@@ -7,7 +7,7 @@ const Principal = () => {
       
       {/* Kingster Page Title / Hero Banner */}
       <div 
-        className="kingster-page-title-wrap relative overflow-hidden py-24 px-8 lg:px-24 mb-16 text-white pt-40 lg:pt-48"
+        className="kingster-page-title-wrap relative overflow-hidden py-24 px-8 lg:px-24 mb-16 text-white pt-28 lg:pt-32"
         style={{ 
           backgroundImage: `url('https://ppsavanicbse.org/wp-content/uploads/2023/07/Principal-Photo-for-Website.jpg')`,
           backgroundAttachment: 'scroll'
@@ -17,7 +17,7 @@ const Principal = () => {
         <div className="relative z-10 container mx-auto">
           <div className="kingster-page-title-container kingster-container">
             <div className="kingster-page-title-content kingster-item-pdlr text-center lg:text-left">
-              <span className="text-sm font-bold tracking-wider bg-[#fbefd5] text-[#90191b] px-4 py-1.5 rounded-full uppercase mb-4 inline-block shadow-md">
+              <span className="text-sm font-bold tracking-wider bg-[#fffbf0] text-[#90191b] px-4 py-1.5 rounded-full uppercase mb-4 inline-block shadow-md">
                 About Us
               </span>
               <h1 className="kingster-page-title text-4xl lg:text-6xl font-extrabold leading-tight">

@@ -38,7 +38,7 @@ const ValueSystem = () => {
         {/* Header Title & Text */}
         <div className="mb-10">
           <div className="flex flex-wrap justify-between items-center mb-4">
-            <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight">Our Value System</h2>
+            <h2 className="text-3xl md:text-5xl font-bold text-white tracking-tight">Our Value System</h2>
           </div>
           <p className="text-[#eff2f6] text-lg lg:w-10/12 leading-relaxed opacity-90 font-light">
             At Gurukul, our academics and curriculum are mainly based on the holistic blend of the framework and principles of ancient and transformational Gurukul Value System- Vidya, Sadvidya and Brahmavidya.
@@ -65,7 +65,7 @@ const ValueSystem = () => {
             {[...slides, ...slides].map((slide, index) => (
               <SwiperSlide key={index} className="h-auto">
                 {/* Stable background image with no extra white space, text overlay */}
-                <div className="relative w-full h-[500px] rounded-[20px] shadow-2xl overflow-hidden group">
+                <div className="relative w-full h-[400px] md:h-[500px] rounded-[20px] shadow-2xl overflow-hidden group">
                   <img 
                     src={slide.image} 
                     alt={slide.title} 
@@ -78,12 +78,12 @@ const ValueSystem = () => {
                   {/* Content overlay, sliding up slightly on hover */}
                   <div className="absolute inset-0 flex flex-col justify-end p-6 md:p-8 text-white z-10 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
                     <h3 className="text-3xl font-bold mb-1 drop-shadow-md">{slide.title}</h3>
-                    <p className="text-[#fbefd5] text-sm font-bold mb-4 tracking-wider uppercase drop-shadow">{slide.subtitle}</p>
+                    <p className="text-[#fffbf0] text-sm font-bold mb-4 tracking-wider uppercase drop-shadow">{slide.subtitle}</p>
                     
                     <ul className="space-y-2 mb-6 text-[15px] opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
                       {slide.features.map((feature, i) => (
                         <li key={i} className="flex items-center text-gray-200">
-                          <span className="w-1.5 h-1.5 rounded-full bg-[#fbefd5] mr-3 shrink-0"></span>
+                          <span className="w-1.5 h-1.5 rounded-full bg-[#fffbf0] mr-3 shrink-0"></span>
                           <span>{feature}</span>
                         </li>
                       ))}
@@ -91,7 +91,7 @@ const ValueSystem = () => {
                     
                     <a 
                       href={slide.link} 
-                      className="inline-flex items-center text-white font-bold text-[15px] hover:text-[#fbefd5] transition-colors mt-auto opacity-0 group-hover:opacity-100 duration-500 delay-200"
+                      className="inline-flex items-center text-white font-bold text-[15px] hover:text-[#fffbf0] transition-colors mt-auto opacity-0 group-hover:opacity-100 duration-500 delay-200"
                     >
                       Read More <ArrowRight size={18} className="ml-2 transform group-hover:translate-x-1 transition-transform" />
                     </a>
@@ -102,10 +102,10 @@ const ValueSystem = () => {
           </Swiper>
           
           {/* Custom Navigation Arrows */}
-          <button className="value-prev-btn absolute top-[40%] -left-4 md:-left-6 lg:-left-12 transform -translate-y-1/2 z-20 w-12 h-12 flex items-center justify-center bg-[#fef3de] text-[#90191b] rounded-full shadow-xl hover:bg-[#90191b] hover:text-white transition-all disabled:opacity-50">
+          <button className="value-prev-btn absolute top-[40%] left-2 md:-left-6 lg:-left-12 transform -translate-y-1/2 z-20 w-12 h-12 flex items-center justify-center bg-[#fffbf0] text-[#90191b] rounded-full shadow-xl hover:bg-[#90191b] hover:text-white transition-all disabled:opacity-50">
             <span className="text-2xl leading-none -ml-1">❮</span>
           </button>
-          <button className="value-next-btn absolute top-[40%] -right-4 md:-right-6 lg:-right-12 transform -translate-y-1/2 z-20 w-12 h-12 flex items-center justify-center bg-[#fef3de] text-[#90191b] rounded-full shadow-xl hover:bg-[#90191b] hover:text-white transition-all disabled:opacity-50">
+          <button className="value-next-btn absolute top-[40%] right-2 md:-right-6 lg:-right-12 transform -translate-y-1/2 z-20 w-12 h-12 flex items-center justify-center bg-[#fffbf0] text-[#90191b] rounded-full shadow-xl hover:bg-[#90191b] hover:text-white transition-all disabled:opacity-50">
             <span className="text-2xl leading-none -mr-1">❯</span>
           </button>
         </div>

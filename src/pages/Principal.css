@@ -2,13 +2,13 @@
 
 :root {
   --color-brand-maroon: #90191b;
-  --color-brand-cream: #fbefd5;
+  --color-brand-cream: #fffbf0;
   --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
 /* Page Wrapper */
 .principal-page-wrapper {
-  background-color: #fef3de;
+  background-color: #fffbf0;
   scroll-margin-top: 100px;
 }
 

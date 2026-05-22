@@ -57,7 +57,7 @@ const AlumniSection = () => {
   ];
 
   return (
-    <section className="bg-[#fef3de] relative overflow-hidden w-full">
+    <section className="bg-[#fffbf0] relative overflow-hidden w-full">
       <div className="container mx-auto px-4">
         
         <div className="max-w-3xl mb-12">
@@ -92,7 +92,7 @@ const AlumniSection = () => {
                       key={idx} 
                       className="bg-gray-50 border border-gray-100 rounded-2xl p-6 flex items-center hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
                     >
-                      <div className="w-16 h-16 mr-5 bg-[#fef3de] rounded-full flex items-center justify-center shadow-sm shrink-0">
+                      <div className="w-16 h-16 mr-5 bg-[#fffbf0] rounded-full flex items-center justify-center shadow-sm shrink-0">
                         <img src={item.icon} alt={item.title} className="w-8 h-8 object-contain" />
                       </div>
                       <div>

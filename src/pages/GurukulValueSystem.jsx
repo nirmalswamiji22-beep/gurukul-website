@@ -3,12 +3,12 @@ import './GurukulValueSystem.css';
 
 const GurukulValueSystem = () => {
   return (
-    <div id="main-container" className="academics-inner bg-[#fef3de] pt-32 pb-16">
-      
+    <div id="main-container" className="academics-inner bg-[#fffbf0] pt-20 lg:pt-28 pb-16">
+
       {/* Page Header section */}
       <div className="wp-bootstrap-blocks-container container mx-auto px-4 mb-12 pt-8">
         <h1 className="page-title text-4xl lg:text-5xl font-extrabold mb-4">
-          Why Swaminarayan Gurukul?
+          Why Gurukul?
         </h1>
         <div className="w-24 h-1 bg-[#cc0000] mx-auto rounded-full"></div>
       </div>
@@ -26,22 +26,22 @@ const GurukulValueSystem = () => {
                 <p className="font-semibold text-gray-800">Yes! There is difference between International Schools and Swaminarayan Gurukul!</p>
                 <p>Aren’t we proud of our nation for UNITY IN DIVERSITY? We enjoy numerous festivals, celebrations, cultural occasions, spirituality &amp; our family – everything that emotionally unite us to experience peace and happiness. No other country is blessed with the culture we Indians have.</p>
                 <p>But LOOK “What is TV showing our children?”, “What do they do on internet?” – What do you expect him to learn? And what do you think they will actually learn? What is our Future?</p>
-                <p className="bg-[#fbefd5] p-4 border-l-4 border-[#90191b] rounded-r-lg font-medium text-gray-800">
+                <p className="bg-[#fffbf0] p-4 border-l-4 border-[#90191b] rounded-r-lg font-medium text-gray-800">
                   Along with International Standard Educational services, Shree Swaminarayan Gurukul International School answers all these questions with its dedicated efforts in inculcating Moral Values &amp; Spirituality along with world class Education in its students – Your Child. Your FUTURE!
                 </p>
               </div>
             </div>
             <div className="col-lg-4 w-full lg:w-1/3 px-4 side-img-container">
               <figure>
-                <img 
-                  fetchPriority="high" 
-                  decoding="async" 
-                  src="https://gurukul.org/wp-content/uploads/2024/02/with-swamiji.jpg" 
-                  alt="About-Img" 
-                  width="480" 
-                  height="720" 
-                  className="img-fluid rounded-xl shadow-lg w-full h-auto" 
-                  title="With Swamiji, Why Swaminarayan Gurukul?" 
+                <img
+                  fetchPriority="high"
+                  decoding="async"
+                  src="https://gurukul.org/wp-content/uploads/2024/02/with-swamiji.jpg"
+                  alt="About-Img"
+                  width="480"
+                  height="720"
+                  className="img-fluid rounded-xl shadow-lg w-full h-auto"
+                  title="With Swamiji, Why Gurukul?"
                 />
               </figure>
             </div>
@@ -60,7 +60,7 @@ const GurukulValueSystem = () => {
       {/* Three Pillars Cards */}
       <section className="value-system-body container mx-auto px-4 mb-24">
         <div className="grid md:grid-cols-3 gap-8">
-          
+
           {/* Vidya card */}
           <div className="value-card">
             <h3>Vidya</h3>
@@ -120,24 +120,24 @@ const GurukulValueSystem = () => {
                   <li>What if we cannot spend time with child properly at home, due to work?</li>
                   <li>What if my child has a unique talent, but just not so good at Studies?</li>
                   <li>How to handle my child’s behaviour? he argues &amp; disobey.</li>
-                  <li>How to balance between Western Culture &amp; Indian Culture?<br/> Many more. (Read our “must-read” article about 21st Century Parenting)</li>
+                  <li>How to balance between Western Culture &amp; Indian Culture?<br /> Many more. (Read our “must-read” article about 21st Century Parenting)</li>
                 </ul>
                 <p>True! We believe that every child is unique and has got a capability scope whether it is a subject, sports or other co-curricular activities. The prime goal of schools is to give knowledge to the child through their education system but Shree Swaminarayan Gurukul International Schools’ education system is about understanding the hidden talents, strengths, passion, feelings, morality, spirituality and dwell through all those weaknesses within a child. Shree Swaminarayan Gurukul has emerged as a boon to nurture their qualities and help them to grow better as a human being.</p>
-                <p className="bg-[#fbefd5] p-4 border-l-4 border-[#90191b] rounded-r-lg font-medium">
+                <p className="bg-[#fffbf0] p-4 border-l-4 border-[#90191b] rounded-r-lg font-medium">
                   Shree Swaminarayan Gurukul’s strong value system is the only one-stop-solution for 21st century concerns of children, parents &amp; society for the Framework is designed on the proven principles of ancient &amp; transformational Gurukul Value System. We strive the best practices through various tools and techniques to inculcate these values into the children adapting to present social and cultural changes. Which lead to our practice of Transforming Life through
                 </p>
               </div>
             </div>
             <div className="col-lg-4 w-full lg:w-1/3 px-4 side-img-container">
               <figure>
-                <img 
-                  decoding="async" 
-                  src="https://gurukul.org/wp-content/uploads/2024/03/Hari.jpg" 
-                  alt="About-Img" 
-                  width="480" 
-                  height="720" 
-                  className="img-fluid rounded-xl shadow-lg w-full h-auto" 
-                  title="Hari, Why Swaminarayan Gurukul?" 
+                <img
+                  decoding="async"
+                  src="https://gurukul.org/wp-content/uploads/2024/03/Hari.jpg"
+                  alt="About-Img"
+                  width="480"
+                  height="720"
+                  className="img-fluid rounded-xl shadow-lg w-full h-auto"
+                  title="Hari, Why Gurukul?"
                 />
               </figure>
             </div>
@@ -151,14 +151,14 @@ const GurukulValueSystem = () => {
           <div className="row flex flex-wrap -mx-4 items-center">
             <div className="col-lg-4 w-full lg:w-1/3 px-4 mb-8 lg:mb-0 side-img-container">
               <figure className="side-img">
-                <img 
-                  decoding="async" 
-                  src="https://gurukul.org/wp-content/uploads/2024/02/students-with-laptop.png" 
-                  alt="Students With Laptop" 
-                  width="480" 
-                  height="720" 
-                  className="img-fluid rounded-xl shadow-lg w-full h-auto" 
-                  title="Students With Laptop, Why Swaminarayan Gurukul?" 
+                <img
+                  decoding="async"
+                  src="https://gurukul.org/wp-content/uploads/2024/02/students-with-laptop.png"
+                  alt="Students With Laptop"
+                  width="480"
+                  height="720"
+                  className="img-fluid rounded-xl shadow-lg w-full h-auto"
+                  title="Students With Laptop, Why Gurukul?"
                 />
               </figure>
             </div>
@@ -167,7 +167,7 @@ const GurukulValueSystem = () => {
               <p className="text-lg text-gray-700 mb-8 leading-relaxed">
                 Education is not a mean to earn a living but to be qualified enough to contribute to world with a decent career. The traditional education system has to be redefined to impart the actual values of an educated being. The values of Vidya encampuses all prerequisite Of modern world professional.
               </p>
-              
+
               <div className="grid md:grid-cols-2 gap-6">
                 {[
                   { img: "knowledge.svg", title: "Ambition", desc: "Inspiring pursuit of excellence, fostering determination, and achieving full potential." },
@@ -176,21 +176,20 @@ const GurukulValueSystem = () => {
                   { img: "Attend-Counselling.svg", title: "Dynamism", desc: "Empowering students to embrace learning with enthusiasm and energy, fostering an active academic and personal growth environment" },
                   { img: "Curiosity.svg", title: "Curiosity", desc: "Nurturing a lifelong passion for exploration and discovery, encouraging students to question and seek knowledge" }
                 ].map((item, idx) => (
-                  <div 
-                    key={idx} 
-                    className={`flex items-start grid-item ${
-                      idx === 4 ? 'md:col-span-2 md:max-w-xl md:mx-auto w-full' : ''
-                    }`}
+                  <div
+                    key={idx}
+                    className={`flex items-start grid-item ${idx === 4 ? 'md:col-span-2 md:max-w-xl md:mx-auto w-full' : ''
+                      }`}
                   >
-                    <div className="mr-4 mt-1 flex-shrink-0 bg-[#fbefd5] p-2 rounded-lg">
-                      <img 
-                        loading="lazy" 
-                        decoding="async" 
-                        src={`https://gurukul.org/wp-content/uploads/2024/02/${item.img}`} 
-                        alt={item.title} 
-                        width="50" 
-                        height="51" 
-                        className="w-10 h-10 object-contain" 
+                    <div className="mr-4 mt-1 flex-shrink-0 bg-[#fffbf0] p-2 rounded-lg">
+                      <img
+                        loading="lazy"
+                        decoding="async"
+                        src={`https://gurukul.org/wp-content/uploads/2024/02/${item.img}`}
+                        alt={item.title}
+                        width="50"
+                        height="51"
+                        className="w-10 h-10 object-contain"
                       />
                     </div>
                     <div>
@@ -211,15 +210,15 @@ const GurukulValueSystem = () => {
           <div className="row flex flex-wrap -mx-4 items-center flex-row-reverse">
             <div className="col-lg-4 w-full lg:w-1/3 px-4 mb-8 lg:mb-0 side-img-container">
               <figure className="side-img">
-                <img 
-                  loading="lazy" 
-                  decoding="async" 
-                  src="https://gurukul.org/wp-content/uploads/2024/03/Sadvidya.jpg" 
-                  alt="About-Img" 
-                  width="480" 
-                  height="720" 
-                  className="img-fluid rounded-xl shadow-lg w-full h-auto" 
-                  title="Sadvidya, Why Swaminarayan Gurukul?" 
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  src="https://gurukul.org/wp-content/uploads/2024/03/Sadvidya.jpg"
+                  alt="About-Img"
+                  width="480"
+                  height="720"
+                  className="img-fluid rounded-xl shadow-lg w-full h-auto"
+                  title="Sadvidya, Why Gurukul?"
                 />
               </figure>
             </div>
@@ -228,7 +227,7 @@ const GurukulValueSystem = () => {
               <p className="text-lg text-gray-700 mb-8 leading-relaxed">
                 Transforming the lives of the students from the very beginning by imparting the knowledge with the real essence of values &amp; morals extracted from Ancient Indian culture transforming the life of a student into a happy &amp; joyful journey- Imparting Sadvidya helps a student to develop…
               </p>
-              
+
               <div className="grid md:grid-cols-2 gap-6">
                 {[
                   { img: "Free-frome-bad-habits.svg", title: "Free from Bad Habits", desc: "Promoting healthy, disciplined lifestyles free from detrimental habits, emphasizing well-being and self-control" },
@@ -237,21 +236,20 @@ const GurukulValueSystem = () => {
                   { img: "Non-Violence.svg", title: "Non – Violence", desc: "Every living being is part of moral fabric, Nobody can seize their right to live for one’s own benefit." },
                   { img: "empathy.svg", title: "Empathy", desc: "Encouraging understanding and compassion, promoting kindness and social harmony" }
                 ].map((item, idx) => (
-                  <div 
-                    key={idx} 
-                    className={`flex items-start grid-item ${
-                      idx === 4 ? 'md:col-span-2 md:max-w-xl md:mx-auto w-full' : ''
-                    }`}
+                  <div
+                    key={idx}
+                    className={`flex items-start grid-item ${idx === 4 ? 'md:col-span-2 md:max-w-xl md:mx-auto w-full' : ''
+                      }`}
                   >
-                    <div className="mr-4 mt-1 flex-shrink-0 bg-[#fbefd5] p-2 rounded-lg">
-                      <img 
-                        loading="lazy" 
-                        decoding="async" 
-                        src={`https://gurukul.org/wp-content/${item.path || '2024/02'}/${item.img}`} 
-                        alt={item.title} 
-                        width="50" 
-                        height="51" 
-                        className="w-10 h-10 object-contain" 
+                    <div className="mr-4 mt-1 flex-shrink-0 bg-[#fffbf0] p-2 rounded-lg">
+                      <img
+                        loading="lazy"
+                        decoding="async"
+                        src={`https://gurukul.org/wp-content/${item.path || '2024/02'}/${item.img}`}
+                        alt={item.title}
+                        width="50"
+                        height="51"
+                        className="w-10 h-10 object-contain"
                       />
                     </div>
                     <div>
@@ -272,15 +270,15 @@ const GurukulValueSystem = () => {
           <div className="row flex flex-wrap -mx-4 items-center">
             <div className="col-lg-4 w-full lg:w-1/3 px-4 mb-8 lg:mb-0 side-img-container">
               <figure className="side-img">
-                <img 
-                  loading="lazy" 
-                  decoding="async" 
-                  src="https://gurukul.org/wp-content/uploads/2024/02/NTPC-6H-x-8W-Banner-Small.jpg" 
-                  alt="Ntpc 6H X 8W Banner Small" 
-                  width="480" 
-                  height="720" 
-                  className="img-fluid rounded-xl shadow-lg w-full h-auto" 
-                  title="Ntpc 6H X 8W Banner Small, Why Swaminarayan Gurukul?" 
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  src="https://gurukul.org/wp-content/uploads/2024/02/NTPC-6H-x-8W-Banner-Small.jpg"
+                  alt="Ntpc 6H X 8W Banner Small"
+                  width="480"
+                  height="720"
+                  className="img-fluid rounded-xl shadow-lg w-full h-auto"
+                  title="Ntpc 6H X 8W Banner Small, Why Gurukul?"
                 />
               </figure>
             </div>
@@ -289,7 +287,7 @@ const GurukulValueSystem = () => {
               <p className="text-lg text-gray-700 mb-8 leading-relaxed">
                 Generally, spirituality is considered as a matter of belief. Well, this is a misconception, the spirituality is actually the experience Of the almighty. Brahmavidya values, the practices defined by eternal vedas and Supreme Bhagwan Shree Swaminarayan, lead us to this amazing enlightenment of realization of self and the almighty god.
               </p>
-              
+
               <div className="grid md:grid-cols-2 gap-6">
                 {[
                   { img: "g-briliance-icon.svg", title: "Faith", desc: "Having strong conviction & faith in Spiritual Scriptures & God as ultimate existence and shelter for souls.", path: "2023/08" },
@@ -300,15 +298,15 @@ const GurukulValueSystem = () => {
                   { img: "Non-attachment.svg", title: "Non – Attachment", desc: "Developing a wisdom of detachment from materialistic objects. Encouraging students to find joy and fulfilment in spiritual richness." }
                 ].map((item, idx) => (
                   <div key={idx} className="flex items-start grid-item">
-                    <div className="mr-4 mt-1 flex-shrink-0 bg-[#fbefd5] p-2 rounded-lg">
-                      <img 
-                        loading="lazy" 
-                        decoding="async" 
-                        src={`https://gurukul.org/wp-content/${item.path || '2024/02'}/${item.img}`} 
-                        alt={item.title} 
-                        width="50" 
-                        height="51" 
-                        className="w-10 h-10 object-contain" 
+                    <div className="mr-4 mt-1 flex-shrink-0 bg-[#fffbf0] p-2 rounded-lg">
+                      <img
+                        loading="lazy"
+                        decoding="async"
+                        src={`https://gurukul.org/wp-content/${item.path || '2024/02'}/${item.img}`}
+                        alt={item.title}
+                        width="50"
+                        height="51"
+                        className="w-10 h-10 object-contain"
                       />
                     </div>
                     <div>
@@ -336,8 +334,8 @@ const GurukulValueSystem = () => {
               </div>
             </div>
             <div className="col-lg-3 w-full lg:w-1/4 px-4 text-left lg:text-right">
-              <a 
-                href="/admissions" 
+              <a
+                href="/admissions"
                 className="btn inline-block bg-white text-[#cc0000] font-bold py-3 px-8 rounded hover:bg-gray-100 transition shadow-lg"
               >
                 Apply Now
@@ -345,8 +343,8 @@ const GurukulValueSystem = () => {
             </div>
           </div>
         </div>
-      </section>        
-      
+      </section>
+
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
     </div>
   );
