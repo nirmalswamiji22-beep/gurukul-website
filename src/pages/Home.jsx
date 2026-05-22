@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import HeroSlider from '../components/HeroSlider';
-import ValueSystem from '../components/ValueSystem';
-import Testimonials from '../components/Testimonials';
-import AlumniSection from '../components/AlumniSection';
+
+const ValueSystem = lazy(() => import('../components/ValueSystem'));
+const Testimonials = lazy(() => import('../components/Testimonials'));
+const AlumniSection = lazy(() => import('../components/AlumniSection'));
 
 const Home = () => {
   return (
@@ -51,15 +52,17 @@ const Home = () => {
         </div>
       </section>
 
-      <div className="snap-start min-h-[100vh] py-16 lg:py-0 lg:h-screen w-full flex flex-col justify-center relative bg-[#fffbf0]">
-        <AlumniSection />
-      </div>
-      <div className="snap-start min-h-[100vh] py-16 lg:py-0 lg:h-screen w-full flex flex-col justify-center relative bg-[#90191b]">
-        <ValueSystem />
-      </div>
-      <div className="snap-start min-h-[100vh] py-16 lg:py-0 lg:h-screen w-full flex flex-col justify-center relative bg-[#fffbf0]">
-        <Testimonials />
-      </div>
+      <Suspense fallback={<div className="h-screen w-full flex items-center justify-center text-gray-500">Loading...</div>}>
+        <div className="snap-start min-h-[100vh] py-16 lg:py-0 lg:h-screen w-full flex flex-col justify-center relative bg-[#fffbf0]">
+          <AlumniSection />
+        </div>
+        <div className="snap-start min-h-[100vh] py-16 lg:py-0 lg:h-screen w-full flex flex-col justify-center relative bg-[#90191b]">
+          <ValueSystem />
+        </div>
+        <div className="snap-start min-h-[100vh] py-16 lg:py-0 lg:h-screen w-full flex flex-col justify-center relative bg-[#fffbf0]">
+          <Testimonials />
+        </div>
+      </Suspense>
     </div>
   );
 };

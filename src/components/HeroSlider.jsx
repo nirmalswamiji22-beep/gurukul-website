@@ -8,10 +8,10 @@ import 'swiper/css/effect-fade';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-import obsi2 from '../data/obsi2.jpeg';
-import obsi1 from '../data/obsi1.jpeg';
-import bsa from '../data/bsa.jpg';
-import brsa from '../data/brsa.JPG';
+import obsi2 from '../data/obsi2.webp';
+import obsi1 from '../data/obsi1.webp';
+import bsa from '../data/bsa.webp';
+import brsa from '../data/brsa.webp';
 
 const HeroSlider = () => {
   const slides = [
@@ -85,7 +85,7 @@ const HeroSlider = () => {
             ></div>
 
             {/* Overlay for better text readability */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent z-10 pointer-events-none"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 md:from-black/90 md:via-black/40 to-transparent z-10 pointer-events-none"></div>
             
             <div className="relative z-10 h-full flex items-end pb-8 md:pb-24">
               <div className="container mx-auto px-4">

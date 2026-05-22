@@ -93,7 +93,7 @@ const AlumniSection = () => {
                       className="bg-gray-50 border border-gray-100 rounded-2xl p-6 flex items-center hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
                     >
                       <div className="w-16 h-16 mr-5 bg-[#fffbf0] rounded-full flex items-center justify-center shadow-sm shrink-0">
-                        <img src={item.icon} alt={item.title} className="w-8 h-8 object-contain" />
+                        <img src={item.icon} alt={item.title} loading="lazy" decoding="async" className="w-8 h-8 object-contain" />
                       </div>
                       <div>
                         <p className="text-2xl font-black text-[#90191b] mb-1">{item.count}</p>

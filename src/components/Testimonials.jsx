@@ -89,6 +89,8 @@ const Testimonials = () => {
                       <img 
                         src={testimonial.image} 
                         alt={testimonial.name} 
+                        loading="lazy"
+                        decoding="async"
                         className="w-full h-auto object-cover"
                       />
                     </div>
