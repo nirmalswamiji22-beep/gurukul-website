@@ -7,6 +7,7 @@ import GurukulValueSystem from './pages/GurukulValueSystem';
 import Principal from './pages/Principal';
 import LifeAtGurukul from './pages/LifeAtGurukul';
 import Events from './pages/Events';
+import Blog from './pages/Blog';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Route path="/life-at-gurukul/residential-life" element={<LifeAtGurukul />} />
             <Route path="/life-at-gurukul" element={<Navigate to="/life-at-gurukul/academic-life" replace />} />
             <Route path="/events" element={<Events />} />
+            <Route path="/blog" element={<Blog />} />
           </Routes>
         </main>
         <Footer />

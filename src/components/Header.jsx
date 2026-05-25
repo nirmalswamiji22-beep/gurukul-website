@@ -84,7 +84,7 @@ const Header = () => {
                 </div>
               </div>
 
-              {/* <Link to="/blog" className="hover:text-[#fffbf0] transition py-2 text-sm font-bold tracking-wide">Blog</Link> */}
+              <Link to="/blog" className="hover:text-[#fffbf0] transition py-2 text-sm font-bold tracking-wide flex items-center h-20">Blog</Link>
 
               <button
                 onClick={() => setIsAdmissionModalOpen(true)}
@@ -151,7 +151,7 @@ const Header = () => {
               </div>
             )}
 
-            {/* <Link to="/blog" className="px-6 py-4 border-b border-gray-100 text-gray-800 font-bold uppercase text-sm block" onClick={() => setIsMobileMenuOpen(false)}>Blog</Link> */}
+            <Link to="/blog" className="px-6 py-4 border-b border-gray-100 text-gray-800 font-bold uppercase text-sm block" onClick={() => setIsMobileMenuOpen(false)}>Blog</Link>
 
             {/* Apply Online Mobile */}
             <div className="px-6 py-4 bg-gray-50 mt-4 border-t border-gray-200">
