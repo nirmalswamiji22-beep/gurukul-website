@@ -73,16 +73,7 @@ const Header = () => {
                 </div>
               </div>
 
-              <div className="relative group cursor-pointer h-20 flex items-center">
-                <span className="flex items-center hover:text-[#fffbf0] transition py-2 text-sm font-bold tracking-wide">
-                  Our Branches <ChevronDown size={14} className="ml-1" />
-                </span>
-                <div className="absolute top-full left-0 mt-0 w-48 bg-[#fffbf0] shadow-lg rounded-b border-t-2 border-[#90191b] hidden group-hover:block z-50">
-                  <Link to="/ahmedabad" className="block px-4 py-2 text-sm text-gray-700 hover:text-[#90191b] hover:bg-gray-50 transition">Ahmedabad</Link>
-                  <Link to="/bangalore" className="block px-4 py-2 text-sm text-gray-700 hover:text-[#90191b] hover:bg-gray-50 transition">Bangalore</Link>
-                  <Link to="/hyderabad" className="block px-4 py-2 text-sm text-gray-700 hover:text-[#90191b] hover:bg-gray-50 transition">Hyderabad</Link>
-                </div>
-              </div>
+              <Link to="/events" className="hover:text-[#fffbf0] transition py-2 text-sm font-bold tracking-wide flex items-center h-20">Events</Link>
 
               <div className="relative group cursor-pointer h-20 flex items-center">
                 <span className="flex items-center hover:text-[#fffbf0] transition py-2 text-sm font-bold tracking-wide">
@@ -93,7 +84,6 @@ const Header = () => {
                 </div>
               </div>
 
-              {/* <Link to="/events" className="hover:text-[#fffbf0] transition py-2 text-sm font-bold tracking-wide">Events</Link> */}
               {/* <Link to="/blog" className="hover:text-[#fffbf0] transition py-2 text-sm font-bold tracking-wide">Blog</Link> */}
 
               <button
@@ -147,19 +137,7 @@ const Header = () => {
               </div>
             )}
 
-            <button
-              className="flex justify-between items-center px-6 py-4 border-b border-gray-100 text-gray-800 font-bold uppercase text-sm"
-              onClick={() => toggleDropdown('branches')}
-            >
-              Our Branches <ChevronDown size={16} className={`transform transition ${activeDropdown === 'branches' ? 'rotate-180 text-[#cc0000]' : ''}`} />
-            </button>
-            {activeDropdown === 'branches' && (
-              <div className="bg-gray-50 px-8 py-2">
-                <Link to="/ahmedabad" className="block py-2 text-sm text-gray-600">Ahmedabad</Link>
-                <Link to="/bangalore" className="block py-2 text-sm text-gray-600">Bangalore</Link>
-                <Link to="/hyderabad" className="block py-2 text-sm text-gray-600">Hyderabad</Link>
-              </div>
-            )}
+            <Link to="/events" className="px-6 py-4 border-b border-gray-100 text-gray-800 font-bold uppercase text-sm block" onClick={() => setIsMobileMenuOpen(false)}>Events</Link>
 
             <button
               className="flex justify-between items-center px-6 py-4 border-b border-gray-100 text-gray-800 font-bold uppercase text-sm"
@@ -173,8 +151,7 @@ const Header = () => {
               </div>
             )}
 
-            {/* <Link to="/events" className="px-6 py-4 border-b border-gray-100 text-gray-800 font-bold uppercase text-sm" onClick={() => setIsMobileMenuOpen(false)}>Events</Link> */}
-            {/* <Link to="/blog" className="px-6 py-4 border-b border-gray-100 text-gray-800 font-bold uppercase text-sm" onClick={() => setIsMobileMenuOpen(false)}>Blog</Link> */}
+            {/* <Link to="/blog" className="px-6 py-4 border-b border-gray-100 text-gray-800 font-bold uppercase text-sm block" onClick={() => setIsMobileMenuOpen(false)}>Blog</Link> */}
 
             {/* Apply Online Mobile */}
             <div className="px-6 py-4 bg-gray-50 mt-4 border-t border-gray-200">
